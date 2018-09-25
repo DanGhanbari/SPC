@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+
+<title>
+Stockton Parish Church
+</title>
+
+<head>
+<link rel="stylesheet" href="SPC.css" type="text/css"/>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+</head>
+
+<body>
+	<audio class="audio" controls autoplay>
+		<source src="#.mp3" type="audio/mpeg">
+	</audio>
+
+	<div class="churchofengland">
+		<a href="#"><img class="logo" src=ChurchofEngland.png width="200" alt="church of england"/></a>
+	</div>
+
+	<div class="container">
+		<img class="pic" src="spc2.jpg" height="830"width="1455" title="Stockton Parish Church"/>
+		<div class="welcome">
+		WELCOME TO THE
+		</div>
+		<div class="spc">
+		STOCKTON PARISH CHURCH
+		</div>
+		<div class="mainbotton">
+			<a href="#">WHO ARE WE?</a>
+		</div>
+	</div>
+
+	<div id="footer">
+
+		<ul id="footer_menu">
+		<li class="homebotton"><a href="#">HOME</a></li>
+		<li>
+			<a href="#">I'M NEW HERE!</a>
+			<div class="one_column_layout">
+				<ul class="dropup">
+					<li><a class="listlinks">What We Believe...</a></li>
+					<li><a class="listlinks">Sunday Services</a></li>
+					<li><a class="listlinks">Meet the teams</a></li>
+					<li><a class="listlinks">Weddings and Baptisms</a></li>
+				</ul>
+			</div>
+		</li>
+		<li>
+		<a href="#">TALKS</a>
+		</li>
+		<li>
+		<a href="#">HISTORY</a>
+			<div class="one_column_layout">
+				<div class="dropup">
+					<a class="listlinks">The Building</a>
+				</div>
+			</div>
+		</li>
+		<li>
+		<a href="#">NEWS</a>
+		</li>
+		<li>
+		<a href="#">CONTACT</a>
+		</li>
+		</ul>
+
+		<ul id="notifications">
+			<li>
+				<a href="#" class="notificationIcons">
+					<img src="ff1.png" width="30px"/>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="notificationIcons">
+					<img src="ii1.png" width= "30px" />
+				</a>
+			</li>
+		</ul>
+	</div>
+
+	<div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat:54.566548, lng:-1.312155};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 16,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgea8q7bN1kuujrxZKVVO0JG1tm6Voskg&callback=initMap">
+    </script>
+
+	<hr/>
+	<p id="copyright">&copy; 2018 Stockton Parish Church.  All Rights Reserved
+	<br /> Phone: (01642) 611734 Address: High Street, Stockton on Tees, TS18 1SP </p>
+
+
+</body>
+
+
+</html>
